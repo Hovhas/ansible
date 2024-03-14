@@ -1,0 +1,18 @@
+sudo cat > /etc/systemd/system/semaphore.service <<EOF
+[Unit]
+Description=Semaphore Ansible
+Documentation=https://github.com/ansible-semaphore/semaphore
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+ExecReload=/bin/kill -HUP $MAINPID
+ExecStart=/home/simon/semaphore/semaphore service --config=/home/simon/semaphore/config.json
+SyslogIdentifier=semaphore
+Restart=always
+RestartSec=10s
+
+[Install]
+WantedBy=multi-user.target
+EOF

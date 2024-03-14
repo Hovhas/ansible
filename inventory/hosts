@@ -1,0 +1,13 @@
+[servers]
+#dell-01
+#dell-02
+#dell-03
+192.168.1.5 #unifi-controller på rasperry pi 4
+172.16.1.15 #nginxproxymanager på proxmox
+rpi3 #För rtsp ström från kamerorna på pi 3
+172.16.1.50 #srv på proxmox
+172.16.1.51 #srv på proxmox
+172.16.1.52 #srv på proxmox
+172.16.1.53 #Worker på proxmox
+172.16.1.54 #Worker på proxmox
+172.16.1.55 #Worker på proxmox

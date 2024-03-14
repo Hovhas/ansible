@@ -1,0 +1,27 @@
+# Pinga alla i hosts
+ansible -i ./inventory/hosts "*" -m ping --user simon --ask-pass
+# apt update & upgrade i hosts
+ansible-playbook ./playbooks/apt.yml --user simon --ask-pass --ask-become-pass -i ./inventory/hosts
+# Installera zsh på alla
+ansible-playbook ./playbooks/apt.yml --user simon --ask-pass --ask-become-pass -i ./inventory/hosts
+# reboot på alla klients
+ansible-playbook ./playbooks/reboot.yml --user simon --ask-pass --ask-become-pass -i ./inventory/hosts
+
+To remove the warning message from Warp related to battery information, you can modify the Warp configuration file. Here's how you can do it:
+
+1. Open the Warp configuration file using a text editor. The file is usually located at `~/.warp/config.toml`.
+
+2. Look for the section `[modules.battery]` in the configuration file.
+
+3. Add the following line under the `
+` section:
+   ```
+   disabled = true
+   ```
+
+4. Save the changes and exit the text editor.
+
+After making this change, Warp will no longer attempt to access battery information and the warning message should no longer appear.
+
+[battery]
+disabled=true
