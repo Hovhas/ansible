@@ -1,0 +1,12 @@
+[servers]
+#dell-01
+#dell-02
+#dell-03
+#rancher
+#xoa-prod
+#ansible
+#unifi-controller
+"rpi3
+172.16.1.121
+172.16.1.123
+172.16.1.122
