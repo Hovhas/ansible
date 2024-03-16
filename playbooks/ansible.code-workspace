@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../.ansible"
+		}
+	],
+	"settings": {
+		"ansible.python.interpreterPath": "/usr/bin/python3"
+	}
+}
