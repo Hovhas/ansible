@@ -12,3 +12,4 @@ rpi3 #För rtsp ström från kamerorna på pi 3
 172.16.1.53 #Worker på proxmox
 172.16.1.54 #Worker på proxmox
 172.16.1.55 #Worker på proxmox
+172.16.1.80 #Denna maskin, funkar inte med reboot??
