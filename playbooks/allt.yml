@@ -17,7 +17,6 @@
           - cmatrix
           - nano
           - cockpit
-          - lsd
         state: present
 
     - name: Remove unused packages
