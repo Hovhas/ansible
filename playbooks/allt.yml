@@ -12,6 +12,7 @@
       ansible.builtin.apt:
         name:
           - qemu-guest-agent
+          - neofetch
           - htop
           - cmatrix
           - nano
