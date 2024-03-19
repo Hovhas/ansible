@@ -1,0 +1,24 @@
+---
+- name: Install and manage packages on Debian/Ubuntu
+  hosts: all
+  become: yes
+  tasks:
+    - name: Update apt cache
+      ansible.builtin.apt:
+        update_cache: yes
+        cache_valid_time: 3600 # Uppdaterar cache om den är äldre än en timme
+
+    - name: Install required packages
+      ansible.builtin.apt:
+        name:
+          - qemu-guest-agent
+          - htop
+          - cmatrix
+          - nano
+          - cockpit
+          - lsd
+        state: present
+
+    - name: Remove unused packages
+      ansible.builtin.apt:
+        autoremove: yes
