@@ -1,1 +1,19 @@
+---
+- name: Patch Management
+  hosts: all
+  become: yes
+
+  tasks:
+    - name: Ensure all packages are up to date
+      ansible.builtin.apt:
+        update_cache: yes
+        upgrade: dist
+
+    - name: Clean up unused packages
+      ansible.builtin.apt:
+        autoclean: yes
+
+    - name: Remove unused packages and their associated configurations
+      ansible.builtin.apt:
+        autoremove: yes
 
