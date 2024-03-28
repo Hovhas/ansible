@@ -21,8 +21,8 @@ ok: [172.16.1.15]
 ok: [172.16.1.53]
 ok: [172.16.1.55]
 ok: [172.16.1.54]
+ok: [172.16.1.80]
 ok: [192.168.1.5]
-fatal: [172.16.1.80]: FAILED! => {"changed": false, "msg": "'/usr/bin/apt-get dist-upgrade ' failed: E: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 7923 (apt)\nE: Unable to acquire the dpkg frontend lock (/var/lib/dpkg/lock-frontend), is another process using it?\n", "rc": 100, "stdout": "", "stdout_lines": []}
 
 TASK [Clean up unused packages] ************************************************
 ok: [172.16.1.15]
@@ -32,6 +32,7 @@ ok: [172.16.1.51]
 ok: [192.168.1.5]
 ok: [172.16.1.53]
 ok: [172.16.1.54]
+ok: [172.16.1.80]
 ok: [172.16.1.55]
 
 TASK [Remove unused packages and their associated configurations] **************
@@ -39,10 +40,11 @@ ok: [172.16.1.15]
 ok: [172.16.1.50]
 ok: [172.16.1.52]
 ok: [172.16.1.51]
-ok: [192.168.1.5]
 ok: [172.16.1.53]
+ok: [192.168.1.5]
 ok: [172.16.1.54]
 ok: [172.16.1.55]
+ok: [172.16.1.80]
 
 PLAY RECAP *********************************************************************
 172.16.1.15                : ok=4    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
@@ -52,7 +54,7 @@ PLAY RECAP *********************************************************************
 172.16.1.53                : ok=4    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
 172.16.1.54                : ok=4    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
 172.16.1.55                : ok=4    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
-172.16.1.80                : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+172.16.1.80                : ok=4    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
 192.168.1.5                : ok=4    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
 192.168.30.150             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
 
