@@ -1,0 +1,19 @@
+
+PLAY [Patch Management] ********************************************************
+
+TASK [Gathering Facts ] ********************************************************
+ok: [172.16.1.50]
+ok: [172.16.1.51]
+ok: [172.16.1.15]
+ok: [192.168.1.5]
+ok: [172.16.1.52]
+ok: [172.16.1.53]
+ok: [172.16.1.54]
+ok: [172.16.1.80]
+ok: [172.16.1.55]
+fatal: [192.168.30.150]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 192.168.30.150 port 22: Connection timed out", "unreachable": true}
+
+TASK [Ensure all packages are up to date update_cache=True, upgrade=dist] ******
+ok: [172.16.1.50]
+ok: [172.16.1.52]
+ok: [172.16.1.15]
