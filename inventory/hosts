@@ -4,7 +4,7 @@
 #dell-03
 192.168.1.5 #unifi-controller på rasperry pi 4
 172.16.1.15 #nginxproxymanager på proxmox
-rpi3 #För rtsp ström från kamerorna på pi 3
+192.168.30.150 # rpi3 #För rtsp ström från kamerorna på pi 3
 # 172.16.1.20 #proxmox för uppdateringar bara
 172.16.1.50 #srv på proxmox
 172.16.1.51 #srv på proxmox
